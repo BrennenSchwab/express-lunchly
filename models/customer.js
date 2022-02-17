@@ -52,6 +52,10 @@ class Customer {
 
     return new Customer(customer);
   }
+  /** combine first and last name into a full name. */
+  get fullName() {// i used get as per further study. is this an optimal case use?
+    return `${this.firstName} ${this.lastName}`;
+  }
 
   /** get all reservations for this customer. */
 
